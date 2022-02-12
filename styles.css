@@ -17,8 +17,9 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 10vh;
-  width: 10vh;
+  width: 100vw;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -28,8 +29,7 @@ header {
 }
 
 .hamburger {
-  float: right;
-  margin-left: 200px;
+  margin-right: 25px;
 }
 
 h1 {
@@ -48,8 +48,12 @@ p {
   color: #344563;
 }
 
-.icons {
-  margin-inline: 2px 13px;
+#ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 6.5em;
 }
 
 section {
