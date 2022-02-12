@@ -1,4 +1,7 @@
-## Portfolio-setup-and-mobile-version-skeleton
+## Portfolio setup: mobile version
+
+Mobile version of Project portfolio 
+
 
 ## Built With
 
@@ -9,20 +12,11 @@
 - Stylelint
 
 ## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-#### cloning project
-git clone git@github.com:collinsmezie/Portfolio-setup-and-mobile-version-skeleton.git
-
-## Getting packages and debuging with Stylelint npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x 
-
-
-##### For validation detection using Stylelint Run npx stylelint "**/*.{css,scss}" 
-
-##### from parent source directory 
-
-## Getting packages and debuging with Webhint npm init -y npminstall --save-dev hint@6.x 
-
-##### For validation detection using Webhint Run npx hint . 
+- go to the directory that you want to clone the repository in.
+- right click and choose Git Bash here.
+- type "git clone git@github.com:collinsmezie/Portfolio-setup-and-mobile-version-skeleton.git"
 
 ### Prerequisites
 - VsCode
@@ -31,4 +25,5 @@ git clone git@github.com:collinsmezie/Portfolio-setup-and-mobile-version-skeleto
 👤 **collins chime **
 
 - GitHub: [@collinsmezie](https://github.com/collinsmezie)
-
+- Twitter: [@collinsmezie1] collins mezie
+- LinkedIn: [collins mezie]
