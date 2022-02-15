@@ -98,11 +98,9 @@ h2 {
   list-style: none;
 }
 
-.btns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 12px 100px 0 0;
+.html-btn {
+  float: left;
+  margin-right: 15px;
   list-style: none;
 }
 
