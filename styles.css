@@ -161,12 +161,11 @@ button:hover {
 .form-section {
   background-image: url("media/Contact-background.png");
   background-repeat: no-repeat;
-  height: 780px;
-  width: 100%;
+  background-size: cover;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-bottom: 50px;
 }
 
@@ -197,11 +196,11 @@ input {
   margin-bottom: 16px;
   border-radius: 8px;
   border: none;
-  width: 327px;
+  width: 90vw;
 }
 
 textarea {
-  width: 327px;
+  width: 90vw;
   height: 170px;
   border-radius: 8px;
   font-size: 15px;
