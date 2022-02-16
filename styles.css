@@ -172,14 +172,12 @@ button:hover {
 
 #span {
   position: absolute;
-  top: -1;
   left: 23em;
 }
 
 @media only screen and (max-width: 400px) {
   #span {
     position: absolute;
-    top: -1;
     left: 20em;
   }
 }
@@ -187,9 +185,8 @@ button:hover {
 @media only screen and (max-width: 320px) {
   #span {
     position: absolute;
-    top: -1;
     left: 18em;
-  } 
+  }
 }
 
 fieldset {
@@ -212,14 +209,14 @@ fieldset {
   color: #fff;
   margin-bottom: 50px;
 }
- 
+
 #contact-me {
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
-width: 327px;
-height: 102px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  width: 327px;
+  height: 102px;
 }
 
 input {
