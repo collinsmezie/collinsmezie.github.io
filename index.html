@@ -227,12 +227,17 @@
       </div>
     </div>
     <div class="form-section">
+     <span id="span"> 
+        <span><img src="media/Ellipse 3.png" alt="image"></span>
+      </span>
       <h2>Contact me</h2>
-      <p>
+      <p id="contact-me">
         If you have an application you are interested in developing, a feature
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
+      <br>
+      <br>
       <form
         action="https://formspree.io/f/xknyrjqn" method="POST" id="html-form">
         <fieldset>
@@ -250,9 +255,10 @@
             id="comments"
             maxlength="500"
             placeholder="Write your message here"
+            required
           ></textarea>
         </fieldset>
-        <input type="submit" name="submit" id="submit" value="Get in touch" />
+        <input type="submit" name="submit" id="submit" value="Get in touch" required/>
       </form>
     </div>
   </body>
