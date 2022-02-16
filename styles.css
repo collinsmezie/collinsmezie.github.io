@@ -98,11 +98,9 @@ h2 {
   list-style: none;
 }
 
-.btns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 12px 100px 0 0;
+.html-btn {
+  float: left;
+  margin-right: 15px;
   list-style: none;
 }
 
@@ -158,4 +156,98 @@ button:hover {
 
 .para {
   margin-right: 15px;
+}
+
+.form-section {
+  background-image: url("media/background1.png");
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#span {
+  position: absolute;
+  left: 23em;
+}
+
+@media only screen and (max-width: 400px) {
+  #span {
+    position: absolute;
+    left: 20em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #span {
+    position: absolute;
+    left: 18em;
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.form-section > h2 {
+  font-size: 40px;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+.form-section p {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+#contact-me {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  width: 327px;
+  height: 102px;
+}
+
+input {
+  font-size: 17px;
+  padding: 15px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: none;
+  width: 90vw;
+}
+
+textarea {
+  width: 90vw;
+  height: 170px;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 15px;
+  margin-bottom: 22px;
+}
+
+#submit {
+  width: 140px;
+  color: #6070ff;
+}
+
+#submit:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+#submit:focus {
+  background-color: #2230d2;
+  color: #fff;
 }
