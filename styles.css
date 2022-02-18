@@ -14,10 +14,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background:#E5E5E5;
+
+}
+
 #introduction {
-  background-image: url("media/background2.svg");
+  background: url("media/background2.svg") white;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 100px;
+  padding-bottom: 200px;
 }
 
 header {
@@ -67,16 +74,14 @@ h2 {
   margin-right: 6.5em;
 }
 
-.intro,
-.About {
+.intro {
   margin: 40px;
 }
 
 #projects-section {
-  margin-top: 50px;
-  display: grid;
-  align-items: center;
-  background-color: white;
+  width: 100vw;
+  background: #E5E5E5;
+  padding-bottom: 70px;
 }
 
 .projects {
@@ -125,7 +130,7 @@ h2 {
 }
 
 .big-btn {
-  background: #fff;
+  background-color: #ffff;
   border: 1px solid #396df2;
   border-radius: 8px;
   padding: 10px;
@@ -135,6 +140,7 @@ h2 {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 #resume {
@@ -158,6 +164,7 @@ h2 {
 .big-btn:hover {
   background-color: #396df2;
   color: white;
+  transform: rotate(360deg);
 }
 
 #languages {
@@ -200,35 +207,16 @@ li {
 }
 
 .form-section {
-  background-image: url("media/background1.png");
-  background-color: #6070ff;
+  background: url("media/contactformbackground.png")  #6070ff;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
-}
-
-#span {
-  position: absolute;
-  left: 23em;
-}
-
-@media only screen and (max-width: 400px) {
-  #span {
-    position: absolute;
-    left: 20em;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #span {
-    position: absolute;
-    left: 18em;
-  }
+  border-top-left-radius: 100px;
 }
 
 fieldset {
@@ -294,7 +282,7 @@ textarea {
   color: #fff;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 600px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -365,14 +353,14 @@ textarea {
   #projects-section {
     display: flex;
     flex-direction: column;
-    max-width: 1156px;
-    margin: 0 auto;
+    align-items: center;
+    padding: 50px 0 150px 0;
   }
 
   .projects {
     display: grid;
     background: #fff;
-    width: 100%;
+    max-width: 1156px;
     border: 2px solid #a7aeff;
     border-radius: 24px;
     grid-template-columns: min-content;
@@ -426,6 +414,17 @@ textarea {
   .About {
     display: flex;
     justify-content: space-between;
+    background: white;
+    width: 100vw;
+    padding: 100px 60px;
+    border-top-right-radius: 100px;
+    position: relative;
+    top: -120px;
+  }
+
+  #background {
+    width: 100%;
+    background: white;
   }
 
   .info p {
