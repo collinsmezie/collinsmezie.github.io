@@ -15,8 +15,7 @@
 }
 
 body {
-  background:#E5E5E5;
-
+  background: #e5e5e5;
 }
 
 #introduction {
@@ -80,7 +79,7 @@ h2 {
 
 #projects-section {
   width: 100vw;
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding-bottom: 70px;
 }
 
