@@ -23,7 +23,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 header {
@@ -68,7 +69,7 @@ h2 {
 .ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 32px;
   list-style: none;
   margin-right: 6.5em;
 }
@@ -106,7 +107,7 @@ h2 {
 
 .data {
   display: flex;
-  justify-content: space-between;
+  gap: 26px;
   margin: 10px 0 15px 0;
   white-space: nowrap;
   list-style: none;
@@ -153,6 +154,11 @@ h2 {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+}
+
+#background {
+  width: 100%;
+  background: white;
 }
 
 #resume:hover {
@@ -203,6 +209,14 @@ li {
   color: #c1c7d0;
   font-weight: 600;
   font-size: 14px;
+}
+
+.About {
+  background: white;
+  padding: 50px 0 0 50px;
+  border-top-right-radius: 80px;
+  position: relative;
+  top: -120px;
 }
 
 .form-section {
@@ -281,7 +295,11 @@ textarea {
   color: #fff;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 992px) {
+  #introduction {
+    padding-bottom: 150px;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -337,7 +355,6 @@ textarea {
   .data {
     display: flex;
     flex-direction: row;
-    width: 20vw;
   }
 
   .canopy {
@@ -357,32 +374,33 @@ textarea {
   }
 
   .projects {
-    display: grid;
+    display: flex;
+    gap: 30px;
     background: #fff;
-    max-width: 1156px;
+    width: 70vw;
     border: 2px solid #a7aeff;
     border-radius: 24px;
-    grid-template-columns: min-content;
-    margin: 70px 20px 70px 20px;
+    margin: 0 auto;
   }
 
-  .content {
-    margin: 40px 0 0 5px;
-    box-sizing: border-box;
+  .projects .img {
+    display: inline;
+    width: 35vw;
+    height: auto;
+    margin-bottom: 25px;
   }
 
   .projects .content {
-    grid-column-start: 2;
-  }
-
-  .projects .big-btn {
-    grid-column-start: 2;
-    width: fit-content;
+    width: 35vw;
+    margin: 40px 0 0 5px;
+    text-align: left;
   }
 
   .swap {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 70vw;
     background: #fff;
     border: 2px solid #a7aeff;
     border-radius: 24px;
@@ -390,24 +408,16 @@ textarea {
   }
 
   .swap .content {
-    margin-top: 50px;
-    width: 43vw;
-  }
-
-  .swap .header {
-    margin-right: 20px;
-  }
-
-  .img {
-    width: 544px;
-    height: 448px;
-    margin: 20px 0 20px 20px;
-  }
-
-  .content p {
-    width: 45vw;
+    margin-top: 20px;
+    width: 35vw;
     text-align: left;
     font-size: 16px;
+  }
+
+  .swap .img {
+    display: inline;
+    margin-right: 20px;
+    width: 35vw;
   }
 
   .About {
@@ -462,11 +472,5 @@ textarea {
   form #submit {
     position: relative;
     left: 150px;
-  }
-
-  .form-section #span {
-    position: relative;
-    width: fit-content;
-    right: 0;
   }
 }
