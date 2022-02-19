@@ -8,28 +8,44 @@
   font-family: "Poppins", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+}
+
 #introduction {
-  background-image: url("media/background2.svg");
+  background: url("media/background2.svg") white;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  height: 10vh;
+  min-height: 10vh;
   width: 100vw;
   align-items: center;
   margin-bottom: 20px;
 }
 
 .logo {
-  margin-left: 20px;
+  margin-left: 29px;
+}
+
+#nav-links {
+  display: none;
 }
 
 .hamburger {
-  margin-right: 25px;
+  margin-right: 23px;
 }
 
 h1 {
@@ -41,6 +57,7 @@ h1 {
   color: #172b4d;
 }
 
+.paragraph,
 p,
 h2 {
   inline-size: 280px;
@@ -52,7 +69,7 @@ h2 {
 .ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 32px;
   list-style: none;
   margin-right: 6.5em;
 }
@@ -62,10 +79,9 @@ h2 {
 }
 
 #projects-section {
-  margin-top: 50px;
-  display: grid;
-  align-items: center;
-  background-color: white;
+  width: 100vw;
+  background: #e5e5e5;
+  padding-bottom: 70px;
 }
 
 .projects {
@@ -77,7 +93,7 @@ h2 {
   box-sizing: border-box;
 }
 
-.header img {
+.img {
   width: 80vw;
   height: 40vh;
   margin: 20px 0 0 20px;
@@ -91,37 +107,58 @@ h2 {
 
 .data {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  gap: 26px;
+  margin: 10px 0 15px 0;
   white-space: nowrap;
   list-style: none;
 }
 
+.canopy {
+  width: 55px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
 .html-btn {
   float: left;
-  margin-right: 15px;
+  margin: 20px 15px 0 0;
   list-style: none;
 }
 
 .big-btn {
-  background: #fff;
+  background-color: #ffff;
   border: 1px solid #396df2;
-  box-sizing: border-box;
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 8px;
+  padding: 10px;
   color: #396df2;
-  margin: 0 0 30px 23px;
+  margin: 20px 0 30px 0;
+  width: 150px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 #resume {
   background: #fff;
   border: 1px solid #396df2;
   box-sizing: border-box;
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 7px;
+  padding: 12px;
   color: #396df2;
   margin: 0 25px 30px 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+#background {
+  width: 100%;
+  background: white;
 }
 
 #resume:hover {
@@ -132,10 +169,11 @@ h2 {
 .big-btn:hover {
   background-color: #396df2;
   color: white;
+  transform: rotate(360deg);
 }
 
 #languages {
-  list-style: none;
+  display: none;
 }
 
 .border {
@@ -154,39 +192,44 @@ button:hover {
   align-items: center;
 }
 
-.para {
-  margin-right: 15px;
+li {
+  list-style: none;
+}
+
+.list-item::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #c1c7d0;
+}
+
+.text {
+  color: #c1c7d0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.About {
+  background: white;
+  padding: 50px 0 0 50px;
+  border-top-right-radius: 80px;
+  position: relative;
+  top: -120px;
 }
 
 .form-section {
-  background-image: url("media/background1.png");
-  background-color: #6070ff;
+  background: url("media/contactformbackground.png")  #6070ff;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
-}
-
-#span {
-  position: absolute;
-  left: 23em;
-}
-
-@media only screen and (max-width: 400px) {
-  #span {
-    position: absolute;
-    left: 20em;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #span {
-    position: absolute;
-    left: 18em;
-  }
+  border-top-left-radius: 100px;
 }
 
 fieldset {
@@ -250,4 +293,184 @@ textarea {
 #submit:focus {
   background-color: #2230d2;
   color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  #introduction {
+    padding-bottom: 150px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 28vw;
+    margin-right: 20px;
+  }
+
+  .logo {
+    margin-left: 53px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: 10em 0 0 10em;
+  }
+
+  .ul {
+    display: flex;
+    width: 14vw;
+    list-style: none;
+  }
+
+  .heading #glad {
+    display: inline;
+  }
+
+  .paragraph {
+    width: 920px;
+    height: 98px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .canopy {
+    width: fit-content;
+    height: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  #projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 150px 0;
+  }
+
+  .projects {
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    width: 70vw;
+    border: 2px solid #a7aeff;
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+
+  .projects .img {
+    display: inline;
+    width: 35vw;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  .projects .content {
+    width: 35vw;
+    margin: 40px 0 0 5px;
+    text-align: left;
+  }
+
+  .swap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 70vw;
+    background: #fff;
+    border: 2px solid #a7aeff;
+    border-radius: 24px;
+    margin: 70px 20px 70px 20px;
+  }
+
+  .swap .content {
+    margin-top: 20px;
+    width: 35vw;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .swap .img {
+    display: inline;
+    margin-right: 20px;
+    width: 35vw;
+  }
+
+  .About {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100vw;
+    padding: 100px 60px;
+    border-top-right-radius: 100px;
+    position: relative;
+    top: -120px;
+  }
+
+  #background {
+    width: 100%;
+    background: white;
+  }
+
+  .info p {
+    width: 447px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .technologies {
+    width: 682px;
+  }
+
+  #tech {
+    display: none;
+  }
+
+  #languages {
+    display: flex;
+    gap: 12px;
+  }
+
+  #contact-me {
+    text-align: center;
+    width: 569px;
+    height: 102px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .fields {
+    width: 35vw;
+    padding: 10px;
+    border-radius: 2px;
+  }
+
+  form #submit {
+    position: relative;
+    left: 150px;
+  }
 }

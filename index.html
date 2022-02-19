@@ -27,17 +27,26 @@
           <a href="index.html"
             ><img src="media/Union.svg" alt="menu icon" class="hamburger"
           /></a>
+          <ul id="nav-links">
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
         </nav>
       </header>
       <div class="intro">
-        <h1>I'm Chime Glad to see you!</h1>
-        <p>
+        <div class="heading">  
+        <h1>I'm Chime</h1> 
+        <h1 id="glad">Glad to see you!</h1>
+        </div>
+        <p class="paragraph">
           I'm a software developer and I can help you build a product, feature
           or website, look through my work and experience! If you like what you
           see and have a project you need coded don't hesitate to contact me.
         </p>
         <br />
         <a href="#">LET'S CONNECT</a>
+        <br />
         <br />
         <br />
         <ul class="ul">
@@ -62,17 +71,41 @@
 
     <div id="projects-section">
       <div class="projects">
-        <div class="header">
-          <img src="media/picture.png" alt="media-picture" />
-        </div>
+        
+        <img class="img" src="media/SnapshootPortfolio1.png" alt="media-picture" />
+        
         <div class="content">
           <h2>Topic</h2>
           <ul class="data">
-            <li>CANOPY</li>
-            <li class="para">Back-End dev</li>
-            <li>2022</li>
+            <li class="canopy">CANOPY</li>
+            <li class="list-item text">Back-End dev</li>
+            <li class="list-item text">2022</li>
           </ul>
 
+          <p>
+            A daily selection of personalized reads; no accounts or sign-ups
+          </p>
+
+          <ul>
+            <li class="html-btn"><img src="media/html.png" alt="html" /></li>
+            <li class="html-btn"><img src="media/css.png" alt="css" /></li>
+            <li class="html-btn"><img src="media/Js.png" alt="javaScript"></li>
+          </ul>
+          <button type="button" class="big-btn">See Project</button>
+        </div>
+        
+      </div>
+      <div class="projects swap">
+      
+          <img class="img" src="media/SnapshootPortfolio2.png" alt="picture" />
+  
+        <div class="content">
+          <h2>Topic</h2>
+          <ul class="data">
+            <li class="canopy">CANOPY</li>
+            <li class="list-item text">Back-End dev</li>
+            <li class="list-item text">2022</li>
+          </ul>
           <p>
             A daily selection of personalized reads; no accounts or sign-ups
             required
@@ -85,19 +118,19 @@
               <img src="media/Js.png" alt="javaScript" />
             </li>
           </ul>
+          <button type="button" class="big-btn">See Project</button>
         </div>
-        <button type="button" class="big-btn">See Project</button>
       </div>
       <div class="projects">
-        <div class="header">
-          <img src="media/Snapshoot2.svg" alt="picture" />
-        </div>
+      
+          <img class="img" src="media/picture3.png" alt="picture" />
+
         <div class="content">
           <h2>Topic</h2>
           <ul class="data">
-            <li>CANOPY</li>
-            <li class="para">Back-End dev</li>
-            <li>2022</li>
+            <li class="canopy">CANOPY</li>
+            <li class="list-item text">Back-End dev</li>
+            <li class="list-item text">2022</li>
           </ul>
           <p>
             A daily selection of personalized reads; no accounts or sign-ups
@@ -111,19 +144,20 @@
               <img src="media/Js.png" alt="javaScript" />
             </li>
           </ul>
+          <button type="button" class="big-btn">See Project</button>
         </div>
-        <button type="button" class="big-btn">See Project</button>
+       
       </div>
-      <div class="projects">
-        <div class="header">
-          <img src="media/Snapshoot3.svg" alt="picture" />
-        </div>
+      <div class="projects swap">
+        
+          <img class="img" src="media/SnapshootPortfolio4.png" alt="picture" />
+        
         <div class="content">
           <h2>Topic</h2>
           <ul class="data">
-            <li>CANOPY</li>
-            <li class="para">Back-End dev</li>
-            <li>2022</li>
+            <li class="canopy"><div>CANOPY</div></li>
+            <li class="list-item text">Back-End dev</li>
+            <li class="list-item text">2022</li>
           </ul>
           <p>
             A daily selection of personalized reads; no accounts or sign-ups
@@ -137,37 +171,14 @@
               <img src="media/Js.png" alt="javaScript" />
             </li>
           </ul>
+          <button type="button" class="big-btn">See Project</button>
         </div>
-        <button type="button" class="big-btn">See Project</button>
-      </div>
-      <div class="projects">
-        <div class="header">
-          <img src="media/Snapshoot4.svg" alt="picture" />
-        </div>
-        <div class="content">
-          <h2>Topic</h2>
-          <ul class="data">
-            <li>CANOPY</li>
-            <li class="para">Back-End dev</li>
-            <li>2022</li>
-          </ul>
-          <p>
-            A daily selection of personalized reads; no accounts or sign-ups
-            required
-          </p>
-
-          <ul>
-            <li class="html-btn"><img src="media/html.png" alt="html" /></li>
-            <li class="html-btn"><img src="media/css.png" alt="css" /></li>
-            <li class="html-btn">
-              <img src="media/Js.png" alt="javaScript" />
-            </li>
-          </ul>
-        </div>
-        <button type="button" class="big-btn">See Project</button>
+      
       </div>
     </div>
-    <div class="intro">
+  <div id="background">
+    <div class="About">
+      <div class="info">
       <h2>About</h2>
       <h2>Myself</h2>
       <p>
@@ -198,22 +209,40 @@
       </ul>
       <br />
       <button type="button" id="resume">Get my resume</button>
+      </div>
+
+
+      <div class="technologies">
       <div class="arrow">
         <h3>Languages</h3>
         <span class="fas fa-angle-down"></span>
       </div>
 
       <br />
-      <br />
+
+
+
+      <ul id="tech">
+        <li>
+          <a href="#"><img src="media/javascript.png" alt="javaScript logo" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="media/html5.png" alt="html5 logo" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="media/css3.png" alt="css3 logo" /></a>
+        </li>
+      </ul>
+
       <ul id="languages">
         <li>
-          <a href="#"><img src="media/Js.svg" alt="javaScript logo" /></a>
+          <a href="#"><img src="media/desktopjs.png" alt="javaScript logo" /></a>
         </li>
         <li>
-          <a href="#"><img src="media/html5.svg" alt="html5 logo" /></a>
+          <a href="#"><img src="media/desktophtml.png" alt="html5 logo" /></a>
         </li>
         <li>
-          <a href="#"><img src="media/css3.svg" alt="css3 logo" /></a>
+          <a href="#"><img src="media/desktopcss.png" alt="css3 logo" /></a>
         </li>
       </ul>
       <br />
@@ -225,11 +254,12 @@
         <h2>Skills</h2>
         <span class="fas fa-angle-right"></span>
       </div>
+      </div>
     </div>
+
+
+
     <div class="form-section">
-     <span id="span"> 
-        <span><img src="media/Ellipse.png" alt="image"></span>
-      </span>
       <h2>Contact me</h2>
       <p id="contact-me">
         If you have an application you are interested in developing, a feature
@@ -247,19 +277,22 @@
             id="name"
             maxlength="30"
             placeholder="Enter your name"
+            class="fields"
             required
           />
-          <input type="email" id="email" name="email" placeholder="Email" required/>
+          <input type="email" id="email" name="email" placeholder="Email" class="fields" required/>
           <textarea
             name="comments"
             id="comments"
             maxlength="500"
             placeholder="Write your message here"
+            class="fields"
             required
           ></textarea>
         </fieldset>
         <input type="submit" name="submit" id="submit" value="Get in touch">
       </form>
+      </div>
     </div>
   </body>
 </html>
