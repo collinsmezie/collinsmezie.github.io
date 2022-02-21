@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 - VsCode
 
 ### Site published at 
-- https://collinsmezie.github.io/Portfolio-setup-and-mobile-version-skeleton/ 
+- https://collinsmezie.github.io
 
 ## Authors
 👤 **collins chime **
