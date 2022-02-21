@@ -213,10 +213,14 @@ li {
 
 .About {
   background: white;
-  padding: 50px 0 0 50px;
+  padding: 50px 0 0 25px;
   border-top-right-radius: 80px;
   position: relative;
   top: -120px;
+}
+
+#tech img {
+  width: 90vw;
 }
 
 .form-section {
