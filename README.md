@@ -1,6 +1,6 @@
-## Portfolio setup: Desktop version
+## Portfolio setup: Desktop And Mobile version
 
-Desktop version of Project portfolio :
+Desktop and Mobile version of Project portfolio :
 complete with project description, developer contact and form. 
 
 
@@ -9,6 +9,7 @@ complete with project description, developer contact and form.
 
 - HTML
 - CSS
+- JavaScript
 - Lighthouse
 - Webhint
 - Stylelint
