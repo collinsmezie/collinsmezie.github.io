@@ -8,8 +8,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-
 *,
 *::before,
 *::after {
@@ -53,8 +51,9 @@ header {
 #hamburger-icon {
   display: none;
 }
+
 .popUp {
- display: none;
+  display: none;
 }
 
 #cancel-icon {
@@ -66,14 +65,12 @@ header {
   width: 50px;
   height: 50px;
   padding: -15px;
-  background-color: #6070FF;
+  background-color: #6070ff;
   font-size: 40px;
   color: #fff;
-
 }
 
 .menu {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -83,7 +80,6 @@ header {
 .menu li a {
   text-decoration: none;
   color: #fff;
-  
 }
 
 .window {
@@ -93,7 +89,6 @@ header {
   background: rgba(96, 112, 225, 0.9);
   position: fixed;
   z-index: 10;
-  
 }
 
 h1 {
@@ -348,7 +343,6 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
-  
   body {
     overflow-x: hidden;
   }
@@ -395,7 +389,6 @@ textarea {
     list-style: none;
   }
 
-  
   ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
@@ -494,13 +487,12 @@ textarea {
     width: 100vw;
     padding: 100px 60px;
     border-top-right-radius: 100px;
-  
   }
- 
+
   #background {
     width: 100vw;
     background: white;
-  } 
+  }
 
   .info p {
     width: 447px;
