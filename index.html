@@ -25,13 +25,65 @@
   <body>
 
     <div id="popUp" class="popUp">
-      <button id="cancel-icon">&times;</button>
+      <button id="cancel-icon" type="button">&times;</button>
       <ul class="menu">
         <li class="item"><a href="#projects">Portfolio</a></li>
         <li class="item"><a href="#about">About</a></li>     
         <li class="item"><a href="#contact">Contact</a></li>
       </ul>
     </div>
+
+
+ <div class="overlay-container">
+  <div id="controller" class="project-details-overlay-outer">
+    <div class="project-details-overlay">
+      <div class="popup-header">
+        <h1 id="topic">Tonic</h1>
+        <button id="exit-btn" type="button" class="popup-btn">&times;</button>
+      </div>
+      <div class="popup-content">
+      <ul class="data nav justify-content-start d-flex">
+        <li id="names" class="canopy">CANOPY</li>
+        <li id="position" class="list-item text">Back-End dev</li>
+        <li id="year" class="list-item text">2022</li>
+      </ul>
+      </div>
+      <div class="popup-img"> 
+        <img id="newImg" class="popup-img" src="media/SnapshootPortfolio1.png" alt="project image">
+      </div>
+      <div class="popup-items"> 
+        <p id="popup-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, nemo molestias officiis laborum 
+          nisi, nulla magni aspernatur itaque natus dolorem suscipit accusamus error perspiciatis est 
+          nesciunt. Repellendus ullam deleniti dolorem aliquam dicta.
+          orem ipsum dolor sit amet consectetur, adipisicing elit. Non, nemo molestias officiis laborum 
+          nisi, nulla magni aspernatur itaque natus dolorem suscipit accusamus error perspiciatis est 
+          nesciunt. Repellendus ullam deleniti dolorem aliquam dicta.
+          orem ipsum dolor sit amet consectetur, adipisicing elit. Non, nemo molestias officiis laborum 
+          nisi, nulla magni aspernatur itaque natus dolorem suscipit accusamus error perspiciatis est 
+          nesciunt. Repellendus ullam deleniti dolorem aliquam dicta.
+        </p>
+      <div class="popup-tech">
+        <ul class="popup-ul">
+          <li class="html-btn"><img src="media/html.png" alt="html" /></li>
+          <li class="html-btn"><img src="media/css.png" alt="css" /></li>
+          <li class="html-btn"><img src="media/Js.png" alt="javaScript"></li>
+        </ul>
+        <ul class="popup-ul">
+          <li class="html-btn"><img src="media/Rubyonrails.png" alt="Ruby on rails"/></li>
+          <li class="html-btn"><img src="media/css.png" alt="css" /></li>
+          <li class="html-btn"><img src="media/Js.png" alt="javaScript"></li>
+        </ul>
+        <div>
+          <button type="button" class="big-btn">See Live<span><img src="media/Icon.svg" alt=""></span></button>
+          <button id="github" type="button" class="big-btn">See Source<span><img id="git" src="media/Icon-GitHub.svg" alt=""></span></button>
+        </div>
+      </div>
+      </div>
+ 
+    </div>
+  </div> 
+  </div>
+  
     
     <div id="introduction">
       <header>
@@ -110,14 +162,12 @@
             <li class="html-btn"><img src="media/css.png" alt="css" /></li>
             <li class="html-btn"><img src="media/Js.png" alt="javaScript"></li>
           </ul>
-          <button type="button" class="big-btn">See Project</button>
+          <button id="firstproject" type="button" class="big-btn">See Project</button>
         </div>
-        
       </div>
+
       <div class="projects swap">
-      
           <img class="img" src="media/SnapshootPortfolio2.png" alt="picture" />
-  
         <div class="content">
           <h2>Topic</h2>
           <ul class="data">
@@ -137,13 +187,11 @@
               <img src="media/Js.png" alt="javaScript" />
             </li>
           </ul>
-          <button type="button" class="big-btn">See Project</button>
+          <button id="secondproject" type="button" class="big-btn">See Project</button>
         </div>
       </div>
       <div class="projects">
-      
           <img class="img" src="media/picture3.png" alt="picture" />
-
         <div class="content">
           <h2>Topic</h2>
           <ul class="data">
@@ -155,7 +203,6 @@
             A daily selection of personalized reads; no accounts or sign-ups
             required
           </p>
-
           <ul>
             <li class="html-btn"><img src="media/html.png" alt="html" /></li>
             <li class="html-btn"><img src="media/css.png" alt="css" /></li>
@@ -163,14 +210,11 @@
               <img src="media/Js.png" alt="javaScript" />
             </li>
           </ul>
-          <button type="button" class="big-btn">See Project</button>
+          <button id="thirdproject" type="button" class="big-btn">See Project</button>
         </div>
-       
       </div>
       <div class="projects swap">
-        
           <img class="img" src="media/SnapshootPortfolio4.png" alt="picture" />
-        
         <div class="content">
           <h2>Topic</h2>
           <ul class="data">
@@ -190,7 +234,7 @@
               <img src="media/Js.png" alt="javaScript" />
             </li>
           </ul>
-          <button type="button" class="big-btn">See Project</button>
+          <button id="fourthproject" type="button" class="big-btn">See Project</button>
         </div>
       
       </div>

@@ -18,6 +18,82 @@ body {
   background: #e5e5e5;
 }
 
+.project-details-overlay-outer {
+  width: 100vw;
+  background-color: #e5e5e5e6;
+  backdrop-filter: blur(4px);
+  padding: 10%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 999;
+  border: 2px solid black;
+}
+
+#topic {
+  width: max-content;
+}
+
+.project-details-overlay {
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid red;
+}
+
+.popup-header {
+  width: 90%;
+  margin-left: 15px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-content {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.popup-img {
+  width: 75.5vw;
+  margin: auto;
+}
+
+#popup-text {
+  padding: 10px;
+  width: 100%;
+}
+
+.popup-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-tech {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.popup-btn {
+  background-color: white;
+  border-style: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  color: black;
+}
+
+/* DANGER */
+
 #introduction {
   background: url("media/background2.svg") white;
   background-repeat: no-repeat;
@@ -179,11 +255,18 @@ h2 {
   padding: 10px;
   color: #396df2;
   margin: 20px 0 30px 0;
-  width: 150px;
+  width: 131px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+
+  /*
   transition: width 2s, height 2s, background-color 2s, transform 2s;
+  */
+}
+
+#git {
+  width: 13px;
 }
 
 #resume {
@@ -343,6 +426,98 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
+  .project-details-overlay-outer {
+    display: none;
+    background-color: #e5e5e5e6;
+    backdrop-filter: blur(4px);
+    padding: 10%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .project-details-overlay {
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+  }
+
+  .popup-header {
+    width: 75vw;
+    margin-left: 15px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #topic {
+    width: max-content;
+  }
+
+  .popup-content {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .popup-img {
+    width: 75.5vw;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  #popup-text {
+    width: 71%;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .popup-items {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 42px;
+  }
+
+  .pop-tech {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .popup-btn {
+    background-color: white;
+    border-style: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: black;
+  }
+
+  .big-btn {
+    background-color: #ffff;
+    border: 1px solid #396df2;
+    border-radius: 8px;
+    padding: 10px;
+    color: #396df2;
+    margin: 20px 0 30px 0;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    width: max-content;
+  }
+
+  #github {
+    padding: 5px 4px 7px 4px;
+  }
+
+  /* DANGER ZONE */
+
   body {
     overflow-x: hidden;
   }
