@@ -90,28 +90,31 @@ const data = [
 
     
      firstproject.addEventListener("click", () => {
-           control.classList.toggle("project-details-overlay-outer");
+           control.classList.add("project-details-overlay-outer");
            popup.style.display = "block";
            topic.innerHTML = data[0]["title"];
+           names.innerHTML = data[0]["name"]
+           position.innerHTML = data[0]["position"]
+           year.innerHTML = data[0]["year"]
            description.innerHTML = data[0]["description"];
            image.src = "media/SnapshootPortfolio1.png"
     
      })
     
      secondproject.addEventListener("click", () => {
-        control.classList.toggle("project-details-overlay-outer"); 
+        control.classList.add("project-details-overlay-outer"); 
         popup.style.display = "block";
         topic.innerHTML = data[1]["title"];
-        names.innerHTML = data[1]["name"]
-        position.innerHTML = data[1]["position"]
-        year.innerHTML = data[1]["year"]
+        names.innerHTML = data[1]["name"];
+        position.innerHTML = data[1]["position"];
+        year.innerHTML = data[1]["year"];
         description.innerHTML = data[1]["description"];
         image.src = "media/SnapshootPortfolio2.png"
  
   })
     
     thirdproject.addEventListener("click", () => {
-        control.classList.toggle("project-details-overlay-outer");
+        control.classList.add("project-details-overlay-outer");
         popup.style.display = "block";
         topic.innerHTML = data[2]["title"];
         names.innerHTML = data[2]["name"]
@@ -123,7 +126,7 @@ const data = [
     })
 
     fourthproject.addEventListener("click", () => {
-        control.classList.toggle("project-details-overlay-outer");
+        control.classList.add("project-details-overlay-outer");
         popup.style.display = "block";
         topic.innerHTML = data[3]["title"];
         names.innerHTML = data[3]["name"]
@@ -135,7 +138,7 @@ const data = [
     })
 
     exit.addEventListener("click", () => {
-        control.classList.toggle("project-details-overlay-outer");
+        control.classList.remove("project-details-overlay-outer");
         popup.style.display = "none";
 
   })

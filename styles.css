@@ -19,6 +19,7 @@ body {
 }
 
 .project-details-overlay-outer {
+  display: none;
   width: 100vw;
   background-color: #e5e5e5e6;
   backdrop-filter: blur(4px);
@@ -40,7 +41,6 @@ body {
 .project-details-overlay {
   background-color: white;
   border-radius: 15px;
-  border: 2px solid red;
 }
 
 .popup-header {
@@ -77,7 +77,6 @@ body {
 .pop-tech {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -90,6 +89,10 @@ body {
   height: 50px;
   font-size: 40px;
   color: black;
+}
+
+.popup-ul {
+  padding-top: 5px;
 }
 
 /* DANGER */
@@ -252,12 +255,12 @@ h2 {
   background-color: #ffff;
   border: 1px solid #396df2;
   border-radius: 8px;
-  padding: 10px;
+  padding: 7px;
   color: #396df2;
   margin: 20px 0 30px 0;
   width: 131px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 24px;
 
   /*
@@ -265,8 +268,39 @@ h2 {
   */
 }
 
-#git {
-  width: 13px;
+#sourcelive {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+#sourcelive button {
+  width: 131px;
+}
+
+#github {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  gap: 10px;
+  width: max-content;
+  padding-left: 20px;
+}
+
+#iconsvg {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  gap: 10px;
+  width: max-content;
+  padding-left: 30px;
+}
+
+#hide {
+  display: none;
 }
 
 #resume {
@@ -305,11 +339,6 @@ h2 {
 .border {
   border-bottom: 1px solid #dfe1e6;
   padding: 20px;
-}
-
-button:hover {
-  background-color: #396df2;
-  color: #ebebff;
 }
 
 .arrow {
@@ -473,13 +502,13 @@ textarea {
   #popup-text {
     width: 71%;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 
   .popup-items {
     display: flex;
     flex-direction: row;
-    padding-bottom: 42px;
+    padding-bottom: 40px;
   }
 
   .pop-tech {
@@ -512,9 +541,21 @@ textarea {
     width: max-content;
   }
 
-  #github {
-    padding: 5px 4px 7px 4px;
+  #sourcelive {
+    margin: 0 10px 70px 0;
   }
+
+  button:hover {
+    background-color: #396df2;
+    color: #ebebff;
+  }
+
+  #hide {
+    display: block;
+  }
+
+
+
 
   /* DANGER ZONE */
 

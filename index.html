@@ -12,6 +12,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/eb94992e2c.js" crossorigin="anonymous"></script> 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EB8L5KN3XT"></script>
 <script>
@@ -68,14 +69,17 @@
           <li class="html-btn"><img src="media/css.png" alt="css" /></li>
           <li class="html-btn"><img src="media/Js.png" alt="javaScript"></li>
         </ul>
-        <ul class="popup-ul">
-          <li class="html-btn"><img src="media/Rubyonrails.png" alt="Ruby on rails"/></li>
+        <ul id="hide" class="popup-ul">
+          <li class="html-btn"><img src="media/html.png" alt="html" /></li>
           <li class="html-btn"><img src="media/css.png" alt="css" /></li>
           <li class="html-btn"><img src="media/Js.png" alt="javaScript"></li>
-        </ul>
-        <div>
-          <button type="button" class="big-btn">See Live<span><img src="media/Icon.svg" alt=""></span></button>
-          <button id="github" type="button" class="big-btn">See Source<span><img id="git" src="media/Icon-GitHub.svg" alt=""></span></button>
+        </ul><br>
+        <div id=sourcelive>
+          <div id="box">
+          <button id="iconsvg" type="button" class="big-btn"><span>See Live</span><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div >
+        <div id="box2">
+          <button id="github" type="button" class="big-btn">See Source<i class="fa-brands fa-github"></i></button>
         </div>
       </div>
       </div>
@@ -358,5 +362,6 @@
       </div>
     </div>
     <script src="index.js"></script>
+  </div>
   </body>
 </html>
