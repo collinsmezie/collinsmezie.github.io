@@ -146,7 +146,7 @@ exit.addEventListener("click", () => {
 
 const form = document.getElementById("html-form");
 const email = document.getElementById("email");
-const message = document.getElementById("message");
+const message = document.getElementById("messages");
 
 form.addEventListener("submit", (event) => {
 
