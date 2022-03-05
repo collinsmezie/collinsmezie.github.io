@@ -71,75 +71,98 @@ const data = [
          },
         
      ]
-    
-     const topic = document.getElementById("topic");
-     const names = document.getElementById("names");
-     const position = document.getElementById("position");
-     const year = document.getElementById("year");
-     const image = document.getElementById("newImg");
-     const description = document.getElementById("popup-text");
-    
-     const firstproject = document.getElementById("firstproject");
-     const secondproject = document.getElementById("secondproject");
-     const thirdproject = document.getElementById("thirdproject");
-     const fourthproject = document.getElementById("fourthproject"); 
-     const control = document.getElementById("controller");
-     const exit = document.getElementById("exit-btn");
 
-     const popup = document.querySelector(".project-details-overlay-outer");
+const topic = document.getElementById("topic");
+const names = document.getElementById("names");
+const position = document.getElementById("position");
+const year = document.getElementById("year");
+const image = document.getElementById("newImg");
+const description = document.getElementById("popup-text");
+
+const firstproject = document.getElementById("firstproject");
+const secondproject = document.getElementById("secondproject");
+const thirdproject = document.getElementById("thirdproject");
+const fourthproject = document.getElementById("fourthproject"); 
+const control = document.getElementById("controller");
+const exit = document.getElementById("exit-btn");
+
+const popup = document.querySelector(".project-details-overlay-outer");
 
     
-     firstproject.addEventListener("click", () => {
-           control.classList.add("project-details-overlay-outer");
-           popup.style.display = "block";
-           topic.innerHTML = data[0]["title"];
-           names.innerHTML = data[0]["name"]
-           position.innerHTML = data[0]["position"]
-           year.innerHTML = data[0]["year"]
-           description.innerHTML = data[0]["description"];
-           image.src = "media/SnapshootPortfolio1.png"
+firstproject.addEventListener("click", () => {
+    control.classList.add("project-details-overlay-outer");
+    popup.style.display = "block";
+    topic.innerHTML = data[0]["title"];
+    names.innerHTML = data[0]["name"]
+    position.innerHTML = data[0]["position"]
+    year.innerHTML = data[0]["year"]
+    description.innerHTML = data[0]["description"];
+    image.src = "media/SnapshootPortfolio1.png"
+
+})
     
-     })
-    
-     secondproject.addEventListener("click", () => {
-        control.classList.add("project-details-overlay-outer"); 
-        popup.style.display = "block";
-        topic.innerHTML = data[1]["title"];
-        names.innerHTML = data[1]["name"];
-        position.innerHTML = data[1]["position"];
-        year.innerHTML = data[1]["year"];
-        description.innerHTML = data[1]["description"];
-        image.src = "media/SnapshootPortfolio2.png"
+    secondproject.addEventListener("click", () => {
+    control.classList.add("project-details-overlay-outer"); 
+    popup.style.display = "block";
+    topic.innerHTML = data[1]["title"];
+    names.innerHTML = data[1]["name"];
+    position.innerHTML = data[1]["position"];
+    year.innerHTML = data[1]["year"];
+    description.innerHTML = data[1]["description"];
+    image.src = "media/SnapshootPortfolio2.png"
+
+})
+
+thirdproject.addEventListener("click", () => {
+    control.classList.add("project-details-overlay-outer");
+    popup.style.display = "block";
+    topic.innerHTML = data[2]["title"];
+    names.innerHTML = data[2]["name"]
+    position.innerHTML = data[2]["position"]
+    year.innerHTML = data[2]["year"]
+    description.innerHTML = data[2]["description"];
+    image.src = "media/picture3.png"
+
+})
+
+fourthproject.addEventListener("click", () => {
+    control.classList.add("project-details-overlay-outer");
+    popup.style.display = "block";
+    topic.innerHTML = data[3]["title"];
+    names.innerHTML = data[3]["name"]
+    position.innerHTML = data[3]["position"]
+    year.innerHTML = data[3]["year"]
+    description.innerHTML = data[3]["description"];
+    image.src = "media/SnapshootPortfolio4.png"
+
+})
+
+exit.addEventListener("click", () => {
+    control.classList.remove("project-details-overlay-outer");
+    popup.style.display = "none";
+
+})
  
-  })
-    
-    thirdproject.addEventListener("click", () => {
-        control.classList.add("project-details-overlay-outer");
-        popup.style.display = "block";
-        topic.innerHTML = data[2]["title"];
-        names.innerHTML = data[2]["name"]
-        position.innerHTML = data[2]["position"]
-        year.innerHTML = data[2]["year"]
-        description.innerHTML = data[2]["description"];
-        image.src = "media/picture3.png"
 
-    })
+const form = document.getElementById("html-form");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
 
-    fourthproject.addEventListener("click", () => {
-        control.classList.add("project-details-overlay-outer");
-        popup.style.display = "block";
-        topic.innerHTML = data[3]["title"];
-        names.innerHTML = data[3]["name"]
-        position.innerHTML = data[3]["position"]
-        year.innerHTML = data[3]["year"]
-        description.innerHTML = data[3]["description"];
-        image.src = "media/SnapshootPortfolio4.png"
+form.addEventListener("submit", (event) => {
 
-    })
+    if(email.value !== email.value.toLowerCase()){
+        event.preventDefault()
+        message.textContent = "EMAIL should be in lowercase";
+        message.style.visibility = "visible";
+        message.style.fontSize = "20px";
+        message.style.color = "white";
+    }else if(email.validity.typeMismatch){
+        event.preventDefault()
+        message.textContent = "Invalid Format,form not sent";
+        message.style.visibility = "visible";
+    }else{
+        message.style.visibility = "hidden";
+    }
+})
 
-    exit.addEventListener("click", () => {
-        control.classList.remove("project-details-overlay-outer");
-        popup.style.display = "none";
 
-  })
- 
