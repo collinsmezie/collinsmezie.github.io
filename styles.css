@@ -23,7 +23,6 @@ body {
   width: 100vw;
   background-color: #e5e5e5e6;
   backdrop-filter: blur(4px);
-  padding: 10%;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -31,7 +30,6 @@ body {
   left: 0;
   overflow-y: auto;
   z-index: 999;
-  border: 2px solid black;
 }
 
 #topic {
