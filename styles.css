@@ -39,7 +39,7 @@ body {
 }
 
 .project-details-overlay {
-  width: fit-content;
+  width: 90vw;
   background-color: white;
   border-radius: 15px;
 }
@@ -230,7 +230,7 @@ h2 {
 
 .data {
   display: flex;
-  gap: 10px;
+  gap: 6px;
   margin: 10px 0 15px 0;
   white-space: nowrap;
   list-style: none;
@@ -469,10 +469,12 @@ textarea {
     background-color: white;
     border-radius: 15px;
     border: none;
+    width: 80%;
+    margin: auto;
   }
 
   .popup-header {
-    width: 75vw;
+    width: 90%;
     margin-left: 15px;
     padding-top: 20px;
     display: flex;
@@ -490,13 +492,13 @@ textarea {
   }
 
   .popup-img {
-    width: 75.5vw;
+    width: 95%;
     margin: auto;
     margin-bottom: 20px;
   }
 
   #popup-text {
-    width: 71%;
+    width: 69%;
     text-align: left;
     margin-bottom: 80px;
   }
