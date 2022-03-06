@@ -39,9 +39,10 @@ body {
 }
 
 .project-details-overlay {
-  width: 90vw;
+  width: 83vw;
   background-color: white;
   border-radius: 15px;
+  margin: auto;
 }
 
 .popup-header {
