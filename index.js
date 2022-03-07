@@ -90,18 +90,18 @@ const popup = document.querySelector(".project-details-overlay-outer");
 
     
 firstproject.addEventListener("click", () => {
-    control.classList.add("project-details-overlay-outer");
-    popup.style.display = "block";
-    topic.innerHTML = data[0]["title"];
-    names.innerHTML = data[0]["name"]
-    position.innerHTML = data[0]["position"]
-    year.innerHTML = data[0]["year"]
-    description.innerHTML = data[0]["description"];
-    image.src = "media/SnapshootPortfolio1.png"
+     control.classList.add("project-details-overlay-outer");
+     popup.style.display = "block";
+     topic.innerHTML = data[0]["title"];
+     names.innerHTML = data[0]["name"]
+     position.innerHTML = data[0]["position"]
+     year.innerHTML = data[0]["year"]
+     description.innerHTML = data[0]["description"];
+     image.src = "media/SnapshootPortfolio1.png"
 
 })
     
-    secondproject.addEventListener("click", () => {
+secondproject.addEventListener("click", () => {
     control.classList.add("project-details-overlay-outer"); 
     popup.style.display = "block";
     topic.innerHTML = data[1]["title"];
