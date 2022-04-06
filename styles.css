@@ -37,7 +37,7 @@ body {
 }
 
 .project-details-overlay {
-  width: 83vw;
+  width: 94%;
   background-color: white;
   border-radius: 15px;
   margin: auto;
@@ -79,6 +79,13 @@ body {
   flex-direction: column;
   width: 100%;
   margin-bottom: 50px;
+}
+
+.popup-tech {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 15px;
 }
 
 .popup-btn {
@@ -271,7 +278,7 @@ h2 {
 }
 
 #sourcelive button {
-  width: 131px;
+  width: 40vw;
 }
 
 #github {
@@ -281,7 +288,7 @@ h2 {
   text-align: center;
   gap: 10px;
   width: max-content;
-  padding-left: 20px;
+  padding-left: 38px;
 }
 
 #iconsvg {
@@ -291,7 +298,7 @@ h2 {
   font-size: 12px;
   gap: 10px;
   width: max-content;
-  padding-left: 30px;
+  padding-left: 48px;
 }
 
 #hide {
@@ -740,5 +747,11 @@ textarea {
   form #submit {
     position: relative;
     left: 150px;
+  }
+
+  .popup-tech {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
   }
 }
